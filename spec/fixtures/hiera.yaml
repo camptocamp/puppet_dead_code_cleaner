@@ -1,7 +1,7 @@
 ---
 :backends: yaml
 :yaml:
-  :datadir: "/etc/puppetlabs/code/environments/%{environment}/hieradata"
+  :datadir: "./spec/fixtures/hieradata"
 :hierarchy:
   - "nodes/%{::trusted.certname}"
   - "environment/%{server_facts.environment}"

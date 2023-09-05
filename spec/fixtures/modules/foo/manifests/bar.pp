@@ -1,4 +1,6 @@
-class foo::bar {
+class foo::bar(
+  $baz,
+) {
   file { 'used_with_file':
     content => file('foo/used_with_file'),
   }
