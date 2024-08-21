@@ -35,7 +35,7 @@ PuppetLint.new_check(:ghostbuster_files) do
       query = "resources[title] {
         (parameters.source = 'puppet:///modules/#{module_name}/#{dir_name}'
          or parameters.source = 'puppet:///modules/#{module_name}/#{dir_name}/')
-        and parameters.recurse = true
+        and (parameters.recurse = true or parameters.recurse = 'remote')
         and nodes { deactivated is null } }"
       return if puppetdb.client.request('', query).data.size > 0
 
