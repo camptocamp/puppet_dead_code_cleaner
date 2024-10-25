@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec', '~> 3.0'
   s.add_development_dependency 'rspec-collection_matchers', '~> 1.0'
   s.add_development_dependency 'rspec-its', '~> 1.0'
-  s.add_development_dependency 'voxpupuli-rubocop', '~> 2.8.0'
+  s.add_development_dependency 'voxpupuli-rubocop', '~> 3.0.0'
   s.add_runtime_dependency 'json', '>= 2.0', '< 3.0'
   s.add_runtime_dependency 'puppet', '>= 6.0', '< 9.0'
   s.add_dependency         'puppet-lint', '>= 1.0', '< 5.0'
